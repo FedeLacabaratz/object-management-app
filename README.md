@@ -14,7 +14,6 @@ Object Management App is a user-friendly interface for managing different types 
 - ➕ **Create Objects**: Add new objects with a name, description, and type.
 - ✏️ **Edit Objects**: Modify existing objects, with changes persisting in WebStorage.
 - 🗑️ **Delete Objects**: Remove objects, with automatic updates to the list.
-- 🔄 **Object Relations**: Establish and manage relationships between objects.
 - 💾 **Data Persistence**: All data is stored in the browser’s cache using WebStorage.
 
 ## Tech Stack
