@@ -6,7 +6,7 @@ Object Management App is a user-friendly interface for managing different types 
 
 ## Live Demo
 
-🔗 [Object Management App](https://object-management-app.surge.sh/)
+🔗 [Object Management App](https://oms-app.surge.sh/)
 
 ## Features
 
