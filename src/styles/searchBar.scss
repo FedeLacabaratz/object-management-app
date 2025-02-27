@@ -1,0 +1,23 @@
+@import './variables';
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.clear-button {
+  background-color: $primary-color;
+  color: $background-color;
+  width: 30%;
+  border: none;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

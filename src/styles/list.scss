@@ -1,0 +1,37 @@
+@import './variables';
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  background-color: $background-color;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+}
+
+.list-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.list-button{
+  margin-top: 10px;
+  width: 40%;
+}
+
+.list-button {
+  background-color: $primary-color;
+  color: $background-color;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

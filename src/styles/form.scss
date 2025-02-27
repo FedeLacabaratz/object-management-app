@@ -1,0 +1,29 @@
+@import './variables';
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container .MuiTextField-root,
+.form-container .MuiFormControl-root {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container button {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.form-button {
+  background-color: $primary-color;
+  color: $background-color;
+  width: 30%;
+  align-items: flex-start;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

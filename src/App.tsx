@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './styles/app.scss';
+import { ObjectProvider } from "./context/Context";
+import SearchBar from "./Components/SearchBar";
+import List from "./Components/List";
+import Form from "./Components/Form";
 
-function App() {
+//App component will be within our ObjectProvider context which allows all components within to share its children avoiding "drilling props" and repetitions
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ObjectProvider>
+      <div className="App">
+        <div className="box-container">
+          <div className="search-box">
+            <SearchBar />
+          </div>
+          <div className="list-box">
+            <List />
+          </div>
+          <div className="form-box">
+            <Form />
+          </div>
+        </div>
+      </div>
+    </ObjectProvider>
   );
 }
 

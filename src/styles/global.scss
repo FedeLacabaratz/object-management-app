@@ -1,0 +1,31 @@
+//This will be the main styles file where all the other styles files will merge to.
+@import './variables';
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  border: none;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: $border-radius;
+  border: 1px solid #ccc;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: $primary-color;
+}
+
