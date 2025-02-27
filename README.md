@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+# Object Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Object Management App is a user-friendly interface for managing different types of objects such as "Desks", "Computers", "Keyboards", "Servers", and "Humans". The application allows users to efficiently create, edit, delete, and establish relationships between these objects while maintaining data persistence using WebStorage, (session storage).
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+🔗 [Object Management App](https://object-management-app.surge.sh/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 🔍 **Search Objects**: Quick search with autocomplete functionality by name or description.
+- ➕ **Create Objects**: Add new objects with a name, description, and type.
+- ✏️ **Edit Objects**: Modify existing objects, with changes persisting in WebStorage.
+- 🗑️ **Delete Objects**: Remove objects, with automatic updates to the list.
+- 🔄 **Object Relations**: Establish and manage relationships between objects.
+- 💾 **Data Persistence**: All data is stored in the browser’s cache using WebStorage.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, TypeScript, HTML, CSS, SASS
+- **State Management**: React Context API
+- **Storage**: WebStorage (Session Storage)
+- **Deployment**: Surge.sh
 
-### `npm run build`
+## Why Surge.sh?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Surge.sh was selected for deployment due to its: ✅ Simplicity and ease of use ✅ Quick setup for static sites ✅ Free hosting for basic use ✅ Direct integration with build processes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation & Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1️⃣ Clone the repository
 
-### `npm run eject`
+```sh
+git clone https://github.com/YOUR_USERNAME/object-management-app.git
+cd object-management-app
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2️⃣ Install dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3️⃣ Run the application locally
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+npm start
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4️⃣ Build for production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm run build
+```
+
+### 5️⃣ Deploy to Surge.sh
+
+```sh
+cd build
+surge
+```
+
+Follow the prompts to complete the deployment.
+
+## Folder Structure
+
+```
+object-management-app/
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.tsx
+│   │   ├── List.tsx
+│   │   ├── Form.tsx
+│   ├── context/
+│   │   ├── Context.tsx
+│   ├── styles/
+│   │   ├── searchBar.css
+│   │   ├── list.css
+│   │   ├── form.css
+│   ├── utils/
+│   ├── App.tsx
+│   ├── index.tsx
+├── public/
+├── package.json
+├── README.md
+```
+
+## Contributing
+
+Feel free to fork the repository and open pull requests to contribute improvements! 🚀
+
+## License
+
+MIT License © [Federico Lacabaratz Duret](https://github.com/FedeLacabaratz)
+
